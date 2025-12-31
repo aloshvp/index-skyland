@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import { Accordion } from 'react-bootstrap';
 
 const About = () => {
     return (
@@ -9,7 +12,7 @@ const About = () => {
                 <div className="subBannerImgWrap">
                     <div className="banner-image">
                         <img
-                            src="assets/web_end/images/banner-about.avif"
+                            src="/images/banner-about.avif"
                             alt="About Us"
                         />
                         <div className="banner-title">
@@ -39,7 +42,7 @@ const About = () => {
             {/* Pattern */}
             <div className="pattern-bg-top">
                 <img
-                    src="assets/web_end/images/pattern-bg-top.png"
+                    src="/images/pattern-bg-top.png"
                     alt="services"
                 />
             </div>
@@ -145,7 +148,7 @@ const About = () => {
                                         data-aos-duration="1200"
                                     >
                                         <img
-                                            src={`assets/web_end/images/${item.img}`}
+                                            src={`/images/${item.img}`}
                                             alt={item.title}
                                         />
                                     </div>
@@ -177,7 +180,7 @@ const About = () => {
                                 data-aos-duration="1200"
                             >
                                 <img
-                                    src="assets/web_end/images/why-choose.avif"
+                                    src="/images/why-choose.avif"
                                     alt="Why Choose Us"
                                 />
                             </div>
@@ -200,48 +203,24 @@ const About = () => {
                                     Driven by integrity, we deliver value through our services
                                 </div>
 
-                                {/* Bootstrap Accordion stays unchanged */}
+                                {/* React-Bootstrap Accordion */}
                                 <div className="BoxAccordion">
-                                    <div className="accordion" id="accordionExample">
+                                    <Accordion defaultActiveKey="0">
                                         {[
-                                            ["Q1", "Experienced Team"],
-                                            ["Q2", "Innovative Designs"],
-                                            ["Q3", "Quality Assurance"],
-                                            ["Q4", "On-Time Delivery"],
-                                            ["Q5", "Sustainable Practices"]
-                                        ].map(([id, title], i) => (
-                                            <div
-                                                className="accordion-item"
-                                                key={id}
-                                                data-aos="fade-up"
-                                                data-aos-duration="1200"
-                                            >
-                                                <h5 className="accordion-header">
-                                                    <a
-                                                        className={`accordion-button ${i !== 0 ? "collapsed" : ""
-                                                            }`}
-                                                        data-bs-toggle="collapse"
-                                                        data-bs-target={`#${id}`}
-                                                    >
-                                                        {title}
-                                                    </a>
-                                                </h5>
-                                                <div
-                                                    id={id}
-                                                    className={`accordion-collapse collapse ${i === 0 ? "show" : ""
-                                                        }`}
-                                                    data-bs-parent="#accordionExample"
-                                                >
-                                                    <div className="accordion-body">
-                                                        <p>
-                                                            Content related to {title.toLowerCase()} goes
-                                                            here.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            { title: "Experienced Team", content: "Our team consists of industry veterans with decades of combined experience in construction and engineering." },
+                                            { title: "Innovative Designs", content: "We push the boundaries of architecture to create modern, functional, and aesthetically pleasing structures." },
+                                            { title: "Quality Assurance", content: "We adhere to strict quality control standards to ensure every project meets the highest benchmarks of safety and durability." },
+                                            { title: "On-Time Delivery", content: "We respect deadlines and are committed to delivering projects on schedule without compromising on quality." },
+                                            { title: "Sustainable Practices", content: "We implement eco-friendly construction methods and materials to minimize environmental impact." }
+                                        ].map((item, index) => (
+                                            <Accordion.Item eventKey={index.toString()} key={index} data-aos="fade-up" data-aos-duration="1200">
+                                                <Accordion.Header>{item.title}</Accordion.Header>
+                                                <Accordion.Body>
+                                                    <p>{item.content}</p>
+                                                </Accordion.Body>
+                                            </Accordion.Item>
                                         ))}
-                                    </div>
+                                    </Accordion>
                                 </div>
                             </div>
                         </div>

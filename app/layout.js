@@ -1,7 +1,9 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
-import "../public/styles/stylesheet.css";
-import AOSInit from "./components/common/AOSInit";
+import "@styles/mainbundle.scss";
+import "@styles/stylesheet.css";
+import AOSInit from "@common/AOSInit";
+import Header from "@common/Header";
 
 export const metadata = {
   title: "Create Next App",
@@ -13,6 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <AOSInit />
+        <Header />
         {children}
       </body>
     </html>

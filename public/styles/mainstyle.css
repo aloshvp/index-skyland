@@ -1,0 +1,48 @@
+/*Header*/
+.headerWrap { z-index: 1000; will-change: padding, background, box-shadow; background: linear-gradient(#000, #0000); justify-content: space-between; align-items: center; gap: 25px; width: 100%; padding: 20px 60px; transition: all .6s cubic-bezier(.25, .8, .25, 1); display: flex; position: fixed; top: 0; left: 0; }
+.headerWrap.scrolled{backdrop-filter:blur(2px);}
+.headerWrap > .container{width:100%}
+.headerSec{display:flex;justify-content:space-between;padding: 35px 0 0;height: 135px;}
+.headerWrap.scrolled .headerSec{padding: 30px 0 0;height: 100px;}
+.navLinksList{display:flex;gap:40px;transition:gap .3s ease;height: 100px;padding: 0;margin: 0;align-items: center;}
+.headerWrap.scrolled .headerNavLinks .navLinksList{gap:30px;height: 70px;}
+.navLinksList > li{display: block;}
+.navLinksList > li > a{font-size: 20px;line-height: 1em;color: #fff;}
+.homeLink{position: relative;}
+.homeLink::before{content:"";position: absolute;top: -15px;left: 50%;transform: translateX(-50%);background-image: url(/images/common/home-icon.png);background-repeat: no-repeat;background-position: center center;width: 20px;height: 20px;}
+.headerLogoSec{position: relative;}
+.headerLogo > img{max-width: 120px;position: relative;top: -25px;transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);}
+.headerWrap.scrolled .headerLogo > img{transform:scale(0.75);top:-40px}
+.hamburgerSec{display:flex;align-items: center;gap:20px;}
+.hamburger{display:flex;flex-direction:column;gap:9px;cursor:pointer;height: max-content;align-items: flex-end;}
+.hamburger span{display:block;width:23px;height:2px;background:#fff;transition:all .3s ease}
+.hamburger span.mrgnLft{margin-left:10px;}
+.hamburger span.line2{width:20px;}
+.hamburger span.line3{width:16px;}
+.headerWrap.scrolled .hamburger span{width:23px}
+.talkWithUsBtn {background: linear-gradient(252deg, rgba(71, 190, 177, 1) 0%, rgba(0, 149, 211, 1) 100%);border-radius: 30px; align-items: center; gap: 15px; padding: 16px 32px; font-size: 18px; transition: background .3s ease-in-out; display  : inline-flex;color: #fff;font-family: neue_haas_grotesk_display65Md; }
+.talkWithUsBtn:hover {background: linear-gradient(252deg, rgba(0, 149, 211, 1) 0%, rgba(71, 190, 177, 1) 100%);color: #fff; }
+
+/* Mobile Sidebar */
+.mobileSidebar{position:fixed;top:0;left:0;width:100%;height:100vh;z-index:1000;opacity:0;visibility:hidden;transition:all .3s ease}
+.mobileSidebar.active{opacity:1;visibility:visible}
+.sidebarOverlay{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.5);backdrop-filter:blur(2px)}
+.sidebarContent{position:absolute;top:0;left:0;width:300px;max-width:75vw;height:100vh;background:var(--yellow);color:#000;transform:translateX(-100%);transition:transform .3s ease;display:flex;flex-direction:column}
+.mobileSidebar.active .sidebarContent{transform:translateX(0)}
+.sidebarHeader{display:flex;justify-content:flex-end;padding:20px 20px 15px;}
+.closeSidebar{background:none;border:none;cursor:pointer;display:flex;flex-direction:column;gap:6px;padding:10px}
+.closeSidebar span{display:block;width:20px;height:2px;background:#000;transition:all .3s ease}
+.closeSidebar span:nth-child(1){transform:rotate(45deg) translate(5px,-0px)}
+.closeSidebar span:nth-child(2){transform:rotate(-45deg) translate(5px,0px)}
+.sidebarNav{flex:1;padding:0 20px 40px 20px}
+.sidebarNavList{list-style:none;padding:0;margin:0}
+.sidebarNavList li{margin-bottom:5px}
+.sidebarNavList a{color:#000;text-decoration:none;font-size:18px;font-weight:500;transition:color .3s ease;display:block;padding:10px 0}
+.sidebarNavList a:hover,.sidebarNavList .homeLink{color:#000}
+
+/*WhatsApp Button*/
+.whatsappBtnWrap{position: fixed;bottom: 60px;right: 60px;z-index: 1000;border-radius: 50%;padding: 8px;background: rgba(191, 191, 191, 0.2); }
+.whatsappBtn{display: inline-block;width: 38px;height: 38px;display: flex;align-items: center;justify-content: center;transition: all 0.3s ease;}
+.whatsappBtn:hover{transform: scale(1.1);}
+.whatsappBtn img{width: 38px;height: 38px;}
+

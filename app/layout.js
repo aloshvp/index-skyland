@@ -1,7 +1,7 @@
-import AOSInit from "./components/AOSInit";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 import "../public/styles/stylesheet.css";
+import AOSInit from "./components/common/AOSInit";
 
 export const metadata = {
   title: "Create Next App",

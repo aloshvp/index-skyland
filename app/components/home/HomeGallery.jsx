@@ -21,6 +21,9 @@ const HomeGallery = () => {
                         key={index}
                         className={`galleryItem ${item.type === 'text' ? 'galleryText' : 'galleryImage'}`}
                         style={item.type === 'text' && item.color ? { backgroundColor: item.color } : {}}
+                        data-aos="fade-up"
+                        data-aos-duration="1200"
+                        data-aos-delay={index * 100}
                     >
                         {item.type === 'image' ? (
                             <Image

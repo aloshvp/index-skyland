@@ -3,6 +3,7 @@
 import Banner from "@components/home/Banner";
 import HomeGallery from "@components/home/HomeGallery";
 import WhyChooseUs from "@components/home/WhyChooseUs";
+import PostTension from "@components/home/PostTension";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Banner />
       <HomeGallery />
       <WhyChooseUs />
+      <PostTension />
     </>
   );
 }

@@ -29,6 +29,10 @@
     .headerLogo > img{max-width: 100px;}
     .headerWrap.scrolled .headerLogo > img {top: -35px;}
 
+    /* Why Choose Us Home */    
+    .whyChooseContent.paddingLeft{padding-left:30px}
+    .whyChooseContent.paddingRight{padding-right:30px}
+
    
 
 }
@@ -64,6 +68,15 @@
     /* Home Gallery */
     .galleryItem{height: 400px;}
     .galleryContent h3{font-size: 50px;}
+
+    /* Why Choose Us Home */    
+    .whyChooseSection{padding:50px 0 20px}
+    .whyChooseSection.pdHome{padding:50px 0 20px}
+    .whyChooseImage{margin:0 0 30px}
+    .whyChooseContent.paddingLeft{padding-left:0}
+    .whyChooseContent.paddingRight{padding-right:0}
+    .whyChooseAccordion .accordion-button{font-family:'neue_haas_grotesk_display65Md';font-size:18px;padding:15px 0}
+    .whyChooseAccordion .titleSmall{font-size:15px;margin:0 0 10px}
 
 }
 

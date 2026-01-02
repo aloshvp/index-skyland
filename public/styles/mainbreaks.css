@@ -1,9 +1,5 @@
 @media screen and (min-width: 1800px) {
 
-    /*Footer*/
-    .footerContactSec { gap:40px 120px;} 
-    .footerContent{gap: 120px;}
-
 }
 
 @media screen and (min-width: 1600px) {
@@ -11,18 +7,6 @@
     /*Header*/
     .navLinksList{gap:90px;}
 
-    /*Footer*/
-    .phoneSec{justify-content: space-between;}
-    .socialMediaLinksSec{justify-content: space-between;}
-
-
-    /*Pellini Details*/
-    .pelliniDetailsContent{padding-right: 160px;}
-
-    /*Brochure*/
-    .BrochureContent {right: 0px; }
-
-   
 }
 
 @media screen and (min-width: 1440px) {
@@ -30,29 +14,11 @@
     .navLinksList{gap:60px;}
     .headerWrap.scrolled .headerNavLinks .navLinksList{gap:50px;}
 
-    /*marquee*/
-    .marqueeWrap{padding:80px 0;}
-    .marqueeItem span{font-size: 160px;}
-
-    /*Product slider*/
-    .productTitle > h3{font-size: 80px;margin: 5px 0 75px;}
-    .productInfo > p{font-size: 40px;}
-    .productImageSec{max-width: 100%;}
-    .productInfo > a{padding: 20px 30px;}
-    .productImageSec .productImage1{left: -180px;max-width: 100%;}
-
-    /*Brochure*/
-    .BrochureContent {max-width: 445px;}
-
-    /*footer*/
-    .footerLogoSec{gap: 30px;}
-    .footerLogoSec{max-width: 100%;}
+    
 }
 
 @media screen and (min-width: 1300px) {
 
-    /*Brochure*/
-    .BrochureOverlay{display: none;}
 }
 
 @media screen and (max-width: 1200px) {
@@ -63,11 +29,7 @@
     .headerLogo > img{max-width: 100px;}
     .headerWrap.scrolled .headerLogo > img {top: -35px;}
 
-    /*Footer*/
-    .footerContactSec {grid-template-columns: repeat(2, 1fr);}
-    .newsletterSec {grid-column: auto;}
-    .footerContactSec{gap: 40px 80px;}
-    .socialMediaLinksSec,.phoneSec{gap: 25px;}
+   
 
 }
 
@@ -83,6 +45,8 @@
     .talkWithUsIcon{bottom: 5px;left: -18px;}
     .headerWrap.scrolled .headerLogo > img{max-width: 70px;top:0px;position: absolute;left: 70px;}
 
+    /* Home Gallery */
+    .homeGalleryGrid{grid-template-columns:repeat(2,1fr)}
 }
 
 
@@ -97,72 +61,10 @@
     .bannerSlide{height:750px;}
     .bannerWrapper .swiper-pagination{right:25px!important;} 
 
-    /*who we are*/
-    .whoWeAreWrap{height: 750px;padding: 80px 0;}
-    .whoWeAreContent{height: calc(750px - 160px);}    
-    .whoWeAreTop h2{font-size: 60px;margin-bottom: 25px;}    
-    .whoWeAreImages .imageLeft, .whoWeAreImages .imageRight{min-width: 220px;}
+    /* Home Gallery */
+    .galleryItem{height: 400px;}
+    .galleryContent h3{font-size: 50px;}
 
-    /*fuel your day*/
-    .fuelYourDayWrap{height: 750px;padding:80px 0;border: 25px solid #42281b;}
-    .fuelYourDayTop span{font-size: 24px;}
-    .fuelYourDayTop h3{font-size: 48px;}
-
-    /*Pellini Details*/
-    .pelliniDetailsWrap{padding:80px 0;height: 750px;}
-    .pelliniDetailsContent{flex-direction: column;justify-content: flex-start;gap: 100px;}
-    .pelliniDetailsLft{width: 100%;position: relative;}
-    .pelliniDetailsLft > em{position: absolute;top: 0;left: 0;}
-    .pelliniDetailsLft > em > img{max-width: 80%;}
-    .pelliniDetailsRght{width: 100%;max-width: 100%;}
-    .pelliniDetailsRght > em > img{max-width: 220px;}
-    .pelliniDetailsRght > span{margin: 40px 0 25px;}
-
-    /*marquee*/
-    .marqueeWrap{padding: 30px 25px;}
-    .marqueeItem span{font-size: 80px;}
-
-    /*Product slider*/
-    .productTitle > span{font-size: 25px;}
-    .productTitle > h3{font-size: 35px;margin: 5px 0 40px;}
-    .productInfo > p{font-size: 22px;}
-    .productInfo > span{margin:20px 0;line-height: 1.3em;font-size: 20px;}
-    .productImageSec{max-width: 200px;}
-    .productInfo > a{padding:12px 24px;font-size: 14px;}
-    .productInfo > a > img{width: 20px;height: 20px;}
-    .productImageSec .productImage1{left:-60px;max-width:160px;}    
-    .productContent{padding: 55px 0 80px;}
-    .productSwiperSliderNav{bottom:60px;gap: 10px;}
-    .productSwiperSliderBtn{width:30px;height:30px;}
-
-    /*about*/
-    .aboutWrap{padding: 80px 0;height: 750px;}
-    .aboutContent{flex-direction: column;}
-    .aboutContentRght > p{max-width: 100%;margin: 0;}
-
-    /*faq*/
-    .faqWrap{padding: 50px 0 60px;}
-    .faqTitle > h2{font-size: 36px;}
-    .faqItem{padding:30px 40px 30px 0;}
-    .faqToggle > img{width: 30px;height: 30px;}
-
-    /*testimonial*/
-    .testimonialWrap{padding: 80px 0;}
-    .testimonialHead{margin-bottom: 40px;}
-    .testimonialAuthor{margin: 30px 0 0;}
-
-    /*Brochure*/    
-    .BrochureContent{right: unset;left: 50%;transform: translate(-50%,-50%);}
-    .BrochureContent > p {margin: 0 0 15px;}
- 
-    /*Footer*/
-    .footerWrap{padding: 60px 0 35px;}
-    .footerContent{flex-direction: column;gap: 45px;}    
-    
-    /*blogs*/
-    .blogsWrap{padding: 80px 0;}
-    .blogsBody{grid-template-columns: repeat(2, 1fr);gap: 60px 30px;}
-   
 }
 
 @media only screen and (max-width: 767px) {  
@@ -184,80 +86,11 @@
     .bannerContent h1 { margin-bottom: 15px; }
     .bannerSlide{height:650px;}
 
-    /*who we are*/
-    .whoWeAreWrap{height: 600px;padding: 60px 0;}
-    .whoWeAreTop h2 { margin-bottom: 20px; font-size: 40px; }
-    .whoWeAreContent{height: calc(600px - 120px);}  
-    .whoWeAreImages .imageLeft, .whoWeAreImages .imageRight{min-width: 100px;}
-    
-    /*fuel your day*/
-    .fuelYourDayWrap{height: 600px;padding: 40px 0;}
-    .fuelYourDayTop em{height: 30px;font-size: 60px;}
-    .fuelYourDayTop span{font-size: 20px;}
-    .fuelYourDayTop h3{font-size: 40px;}
-    .fuelYourDayBottom p{font-size: 24px;}
+    /* Home Gallery */
+    .homeGalleryGrid{grid-template-columns:1fr}
+    .galleryItem {aspect-ratio:auto;height:300px}
+    .galleryContent h3{font-size: 40px;}    
 
-    /*Pellini Details*/
-    .pelliniDetailsWrap{height: 600px;padding: 60px 0;}
-    .pelliniDetailsLft > h3{font-size: 35px;}
-    .pelliniDetailsLft > h3 > em{display: inline-block;}
-    .pelliniDetailsContent{gap: 40px;}
-    .pelliniDetailsRght > em > img {max-width: 160px;}
-    .pelliniDetailsRght > span { margin: 30px 0 20px;font-size: 22px; }
-    .pelliniDetailsRght > p{font-size: 16px;}
-
-    /*marquee*/
-    .marqueeWrap{padding:25px 15px;}
-
-    /*Product slider*/
-    .productContent{flex-direction: column;gap: 35px;padding: 60px 0 105px;text-align: center;}
-    .productTitle > h3{margin: 20px 0;}
-    .productTitle > h3 > em{display: inline-block;}
-    .productImageSec{margin: 0 auto;}
-    .productInfo{text-align: center;width: 100%;}
-    .productSwiperSliderNav{bottom:55px;}    
-
-    /*about*/
-    .aboutWrap{height: 600px;padding: 60px 0;}
-    .aboutContentLft > h3{font-size: 30px;}
-    .aboutContentRght > p{font-size: 16px;}    
-
-    /*faq*/
-    .faqWrap{padding: 35px 0 60px;}
-    .faqTitle> h2 {font-size: 25px;line-height: 1.3em;}
-    .faqTitle{flex-direction: column;align-items: flex-start;gap: 10px;}
-    .faqTitle em{font-size: 16px;}
-    .faqDesc{font-size: 16px;margin-bottom: 15px;}
-    .faqToggle > img{width: 25px;height: 25px;}
-    .faqItem {padding: 25px 35px 25px 0;}
-
-    /*testimonial*/
-    .testimonialWrap{padding: 60px 0;}
-    .testimonialTitile > h3{font-size: 25px;}
-    .testimonialTitile > span{font-size: 16px;}
-    .testimonialBtn a {font-size: 16px;padding: 10px 20px;}
-    .testimonialContent{margin-bottom: 10px;}
-
-    /*blogs*/
-    .blogsWrap{padding: 60px 0;}
-    .blogsHead > h2{font-size: 40px;}
-    .blogsHead > span{font-size: 20px;margin-bottom: 4px;}
-    .blogsBody{grid-template-columns: repeat(1, 1fr);}
-    .blogItem > h5{font-size: 20px;min-height: auto;}
-    .blogItem > p{min-height: auto;margin: 10px 0 25px;}
-    .blogItem > a{font-size: 14px;}
-
-    /*Brochure*/    
-    .BrochureContent{width: 100%;}
-    .BrochureContent > a{font-size: 16px;padding: 14px 24px;}
-
-    /*footer*/
-    .footerContactSec{display: flex;flex-direction: column;}
-    .footerBottomSec{flex-direction: column;align-items: center;gap: 10px;padding-top: 25px;}
-    .footerContent{padding-bottom: 45px;}
-
-
-    
 }
 
 @media only screen and (max-width: 479px) {
@@ -270,66 +103,6 @@
 
     /*banner*/
     .bannerContent p{font-size: 16px;}
-
-    /*who we are*/
-    .whoWeAreTop h2{font-size: 35px;}
-    .whoWeAreTop p{font-size: 16px;}
-    .whoWeAreImages{gap: 80px;}
-
-    /*fuel your day*/
-    .fuelYourDayTop span{font-size: 18px;}
-    .fuelYourDayTop h3{font-size: 30px;}
-    .fuelYourDayBottom p{font-size: 20px;}
-    .fuelYourDayTop em { height: 25px; font-size: 50px; }
-
-    /*Pellini Details*/
-    .pelliniDetailsLft > h3{font-size: 28px;}
-    .pelliniDetailsRght > span{font-size: 20px;}
-    
-    /*Product slider*/
-    .productTitle > h3{font-size: 28px;}   
-    
-    /*about*/
-    .aboutContentLft > h3{font-size: 28px;}
-
-    /*faq*/
-    .faqItem {padding: 20px 35px 20px 0;}
-    .faqTitle > h2 {font-size: 20px;}
-    .faqLink {font-size: 14px;}
-    .faqToggle > img{width: 20px;height:20px;}
-
-    /*testimonial*/
-    .testimonialHead{flex-direction: column;align-items: flex-start;gap: 30px;margin-bottom: 30px;}
-    .testimonialBtn a{font-size: 14px;padding: 8px 18px;}
-    .authorInfo h4{font-size: 18px;}
-    .testimonialText{font-size: 17px;}
-    .testimonialContent{margin-bottom: 0;}
-    .authorImg{width: 80px;height: 80px;}
-
-    /*blog*/
-    .blogItem > p{font-size: 16px;}
-    
-    /*Brochure*/  
-    .BrochureContent > p{font-size: 16px;margin: 0 15px 10px;}
-    .BrochureContent > a{font-size: 14px;}
-
-    /*footer*/
-    .footerWrap{padding: 60px 0 30px;}
-    .footerContent{padding-bottom: 30px;gap: 30px;}
-    .footerBottomSec{padding-top: 20px;}
-    .footerBottomSec > span,.footerBottomSec > em{text-align: center;line-height: 1.2em;font-size: 14px;}
-    .footerContactSec{gap: 30px 60px;}
-    .footerLinkNav > li > a{font-size: 16px;margin-bottom: 16px;}
-    .addressSec > p {font-size: 16px;}
-    .addressSec > p > em{display: inline-block;}
-    .phoneSec > a{font-size: 16px;}
-    .newsletterSec > span{font-size: 16px;}
-    .socialMediaLinksSec, .phoneSec{gap: 15px;}
-    .socialMediaLinks{gap: 20px;}
-    .newsletterSec > h5{font-size: 20px;}
-    .newsletterInput{width: 100%;}
-    .socialMediaLinksSec > span{font-size: 16px;}
-    .newsletterInput > a{font-size: 14px;top: 10px;}
 
 }
 

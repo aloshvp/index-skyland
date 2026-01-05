@@ -1,16 +1,18 @@
 
 
 import Banner from "@home/Banner";
+import AtGlance from "@home/AtGlance";
 import HomeGallery from "@home/HomeGallery";
+import WhatWeDo from "@home/WhatWeDo";
 import WhyChooseUs from "@home/WhyChooseUs";
 import PostTension from "@home/PostTension";
-import WhatWeDo from "@home/WhatWeDo";
 import HomeForm from "@home/HomeForm";
 
 export default function Home() {
   return (
     <>
       <Banner />
+      <AtGlance />
       <WhatWeDo />
       <HomeGallery />
       <WhyChooseUs />

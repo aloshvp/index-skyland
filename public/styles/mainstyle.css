@@ -132,3 +132,21 @@
 .homeFormSec button{background: linear-gradient(252deg, #47beb1 0%, #0095d3 100%);padding:20px 70px;border-radius:30px;font-size:28px;line-height: 1em;transition:all .3s ease;height: 70px;color:#fff;font-family: neue_haas_grotesk_display65Md;}
 .homeFormSec button:hover{background: linear-gradient(252deg, rgba(0, 149, 211, 1) 0%, rgba(71, 190, 177, 1) 100%);color: #fff; }
 
+
+/* At Glance */
+.atGlanceWrap{position:relative;margin:35px;height: 915px;display:flex;align-items:center}
+.atGlanceBg{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;border-radius:3px;}
+.atGlanceOverlay{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;background:linear-gradient(90deg,#000 0%,#fff0 100%);opacity:.6}
+.atGlanceWrap .container{position:relative;z-index:2;width:100%;height: 100%;}
+.atGlanceGrid{display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; height: 100%; min-height: 500px; gap: 40px;padding: 60px 0;}
+.atGlanceItem{display: flex; flex-direction: column;}
+.atGlanceItem.item1{justify-content: flex-start; align-items: flex-start;}
+.atGlanceItem.item2{justify-content: flex-start; align-items: flex-end;}
+.atGlanceItem.item3{justify-content: flex-end; align-items: flex-start;}
+.atGlanceItem.item4{justify-content: flex-end; align-items: flex-end; color: #fff;}
+.atGlanceItem h2{font-size: 90px;line-height: 1em;font-family: neue_haas_grotesk_display65Md; color: #fff; max-width: 400px;}
+.atGlanceItem span{font-size: 55px;line-height: 1.4em; display: block; margin-bottom: 20px; font-family: neue_haas_grotesk_disp55roman;}
+.atGlanceItem p{font-size: 24px;line-height: 1.5em;}
+.atGlanceItem .exploreBtn{display: inline-block;background: #fff;padding: 16px 42px;color: var(--greenBlue);border-radius: 30px;transition: all .5s ease;font-size: 22px;line-height: 1em;font-family: neue_haas_grotesk_display65Md;}
+.atGlanceItem .exploreBtn:hover{background: var(--greenBlue);color: #fff;}
+

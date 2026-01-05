@@ -150,3 +150,6 @@
 .atGlanceItem .exploreBtn{display: inline-block;background: #fff;padding: 16px 42px;color: var(--greenBlue);border-radius: 30px;transition: all .5s ease;font-size: 22px;line-height: 1em;font-family: neue_haas_grotesk_display65Md;}
 .atGlanceItem .exploreBtn:hover{background: var(--greenBlue);color: #fff;}
 
+/*client review*/
+.clientReviewWrap{background:#EFEFEF;padding: 135px 0;}
+.clientReviewContent{display:flex;gap:80px;}

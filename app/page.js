@@ -7,6 +7,7 @@ import WhatWeDo from "@home/WhatWeDo";
 import WhyChooseUs from "@home/WhyChooseUs";
 import PostTension from "@home/PostTension";
 import HomeForm from "@home/HomeForm";
+import ClientReview from "@home/ClientReview";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <HomeGallery />
       <WhyChooseUs />
       <PostTension />
+      <ClientReview />
       <HomeForm />
     </>
   );

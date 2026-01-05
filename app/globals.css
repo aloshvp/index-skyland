@@ -1,6 +1,6 @@
 @import url("@styles//font.css");
 
-:root {--greenBlue:#47BEB1;}
+:root {--greenBlue:#47BEB1;--blue:#0095D3;--yellow:#F2C337;}
 .container{width:100%;margin-right:auto;margin-left:auto;padding-right:1rem;padding-left:1rem}
 *{margin:0;padding:0;box-sizing:border-box}
 ul,ol{list-style:none}

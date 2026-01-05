@@ -129,5 +129,6 @@
 .homeFormSec form{display:flex;gap:50px;align-items:center;flex-wrap:wrap}
 .homeFormSec input{background:transparent;border:none;border:1px solid var(--grey);padding:18px 42px;color:#fff;font-size:18px;flex:1;border-radius: 50px;height: 70px;}
 .homeFormSec input::placeholder{color:var(--grey);font-size: 20px;line-height: 1em;}
-.homeFormSec button{background: linear-gradient(252deg, #47beb1 0%, #0095d3 100%);padding:20px 70px;border-radius:30px;font-size:28px;line-height: 1em;transition:all .3s ease;height: 70px;color:#fff}
+.homeFormSec button{background: linear-gradient(252deg, #47beb1 0%, #0095d3 100%);padding:20px 70px;border-radius:30px;font-size:28px;line-height: 1em;transition:all .3s ease;height: 70px;color:#fff;font-family: neue_haas_grotesk_display65Md;}
 .homeFormSec button:hover{background: linear-gradient(252deg, rgba(0, 149, 211, 1) 0%, rgba(71, 190, 177, 1) 100%);color: #fff; }
+
